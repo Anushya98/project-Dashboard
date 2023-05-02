@@ -1,0 +1,95 @@
+.headers{
+   margin-left: 20px;
+   margin-right: 20px;
+   background-color: #fff;
+   
+}
+.form-check-input[type=checkbox]{
+   margin-top: 1.3rem;
+}
+
+.Cardbox{
+   background: linear-gradient(130deg,#293e92, pink,  #293e92);
+   background-size: 200% 200%;
+   animation: changebg 2s linear .4s infinite;
+   border-radius: 15px;
+}
+@keyframes changebg{
+   0%{
+       background-position: 10% 0%;
+   } 50% {
+       background-position: 91% 100%;
+   } 100% {
+       background-position: 10% 0%;
+   }
+}
+
+.cards {
+   width: auto;
+  
+}
+.task{
+  display:grid;
+  grid-template-columns:30% auto;
+    
+}
+.Tasktable{
+   padding-left: 30px;
+}
+.project{
+   display: grid;
+   grid-template-columns: 60% auto;
+}
+.users{
+   padding:1.25rem;
+}
+@media (max-width: 1200px){
+   .cards {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      width: 100%;
+      
+   }
+   }
+
+   @media (max-width: 1200px){
+      .chart {
+        width: 100%;
+      }
+      }
+
+      @media (max-width:1200px){
+         .task {
+         display: grid;
+         grid-template-columns:100%;
+         row-gap: 1rem;
+         }
+         }
+
+         @media (max-width:1200px){
+            .project {
+            display: grid;
+            grid-template-columns:100%;
+            row-gap: 1rem;
+            }
+            }
+            @media (max-width:1200px){
+               .Tasktable {
+               padding-left: 0;
+               }
+               }
+   
+            .card-animate{
+               transition: all .4s;
+               border-radius: 50px;
+                        }
+            .card-animate:hover {
+                transform: translateY(calc(-1.5rem / 3));
+                box-shadow: 5px 5px 10px 5px rgba(30,32,37,.12);
+            }
+            
+
+.table > thead {
+   background-color: rgb(21, 183, 242);
+}
