@@ -157,14 +157,14 @@ const ProjectDetails = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3">Total Projects Completed</p>
+                                   <p class="text-uppercase fw-medium mb-3">Total Projects Completed</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ projectCount } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Completed project this month</p>
+                                   <p class="mb-0">Completed project this month</p>
                                </div>
                            </div>
                        </div>
@@ -176,7 +176,7 @@ const ProjectDetails = () => {
 
                <div class="col-xl-4">
                    <div class="card card-animate" style={{borderRadius:"15px"}}>
-                    <div className="Cardbox">
+                    <div className="Cardbox1">
                        <div class="card-body" style={{ padding: "15px" }}>
                            <div class="d-flex align-items-center">
                                <div class="avatar-sm flex-shrink-0">
@@ -185,14 +185,14 @@ const ProjectDetails = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3">Total Ongoing Projects</p>
+                                   <p class="text-uppercase fw-medium mb-3">Total Ongoing Projects</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ countAll } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Ongoing project this month</p>
+                                   <p class="mb-0">Ongoing project this month</p>
                                </div>
                            </div>
                        </div>
@@ -205,7 +205,7 @@ const ProjectDetails = () => {
 
                <div class="col-xl-4">
                    <div class="card card-animate" style={{borderRadius:"15px"}}>
-                    <div className="Cardbox">
+                    <div className="Cardbox2">
                        <div class="card-body" style={{ padding: "15px" }}>
                            <div class="d-flex align-items-center">
                                <div class="avatar-sm flex-shrink-0">
@@ -214,14 +214,14 @@ const ProjectDetails = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3">Total Overdue Projects</p>
+                                   <p class="text-uppercase fw-medium mb-3">Total Overdue Projects</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ overdueCount } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Overdue project this month</p>
+                                   <p class="mb-0">Overdue project this month</p>
                                </div>
                            </div>
                        </div>
@@ -238,7 +238,7 @@ const ProjectDetails = () => {
                <div   class= "col-xl-12" style={{ marginTop:"50px" }}>
                
                             <div class="card card-height-100">
-                                <div class="card-header d-flex align-items-center">
+                                <div class="card-header d-flex align-items-center" >
                                     <h4 class="card-title flex-grow-1 mb-0">Active Projects</h4>
                                     <div class="flex-shrink-0">
                                         <a href="javascript:void(0);" class="btn btn-soft-info btn-sm">Export Report</a>
@@ -270,12 +270,12 @@ const ProjectDetails = () => {
 </table>
 <ReactPaginate
    previousLabel={
-    <IconContext.Provider value={{ color: "#B8C1CC", size: "36px" }}>
+    <IconContext.Provider value={{ color: "#8e48d4", size: "36px" }}>
       <AiFillLeftCircle />
     </IconContext.Provider>
   }
   nextLabel={
-    <IconContext.Provider value={{ color: "#B8C1CC", size: "36px" }}>
+    <IconContext.Provider value={{ color: "#8e48d4", size: "36px" }}>
       <AiFillRightCircle />
     </IconContext.Provider>
   }

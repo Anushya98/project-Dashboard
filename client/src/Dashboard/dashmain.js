@@ -107,14 +107,14 @@ const TopTotal = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3">New Users</p>
+                                   <p class="text-uppercase fw-medium mb-3">New Users</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ countAll } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Users this month</p>
+                                   <p class=" mb-0">Users this month</p>
                                </div>
                            </div>
                        </div>
@@ -130,7 +130,7 @@ const TopTotal = () => {
    
                     <div className="cards" class="col-xl-4">
                    <div class="card card-animate"  style={{borderRadius:"15px"}}>
-                   <div className="Cardbox">
+                   <div className="Cardbox1">
                        <div class="card-body">
                            <div class="d-flex align-items-center">
                                <div class="avatar-sm flex-shrink-0">
@@ -139,14 +139,14 @@ const TopTotal = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3">Controllers</p>
+                                   <p class="text-uppercase fw-medium mb-3">Controllers</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ userCount } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Controllers this month</p>
+                                   <p class="mb-0">Controllers this month</p>
                                </div>
                            </div>
                        </div>
@@ -159,7 +159,7 @@ const TopTotal = () => {
    
                <div class="col-xl-4">
                    <div class="card card-animate"  style={{borderRadius:"15px"}}>
-                   <div className="Cardbox">
+                   <div className="Cardbox2">
                        <div class="card-body">
                            <div class="d-flex align-items-center">
                                <div class="avatar-sm flex-shrink-0">
@@ -168,14 +168,14 @@ const TopTotal = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3">Designers</p>
+                                   <p class="text-uppercase fw-medium mb-3">Designers</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ userCount } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Designers this month</p>
+                                   <p class=" mb-0">Designers this month</p>
                                </div>
                            </div>
                        </div>

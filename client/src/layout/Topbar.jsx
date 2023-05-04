@@ -16,7 +16,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 //import { setMode } from "state";
-import maincontainer from "../pages/maincontainer";
+
 
 const token = localStorage.getItem("token");
 const config = {
@@ -109,13 +109,13 @@ const Topbar = () => {
         <IconButton>
           <PersonOutlinedIcon style={{ color: 'white'}}/>
         </IconButton> */}
-        <div>
+        <div className='topbar-icon'> 
         <IconButton
           to="/adduser"
           className="topbar-btn"
           LinkComponent={Link}
           style={{
-            color: "white",
+            color: "black",
             fontSize: "20px",
             //fontFamily: 'Poppins'
           }}
@@ -123,14 +123,14 @@ const Topbar = () => {
           Add User
         </IconButton>
         </div>
-        <div>
+        <div className='topbar-icon'>
         {!currentUser ? (
           <IconButton
             to="/login"
             className="topbar-btn"
             LinkComponent={Link}
             style={{ 
-              color: "white",
+              color: "black",
               fontSize: "20px"
              }}
           >
@@ -144,7 +144,7 @@ const Topbar = () => {
               //className="d-none d-xl-inline-block ms-1 fw-medium user-name-text"
               LinkComponent={Link}
               style={{ 
-                color: "white", 
+                color: "black", 
                 fontSize: "20px" 
               }}
             >

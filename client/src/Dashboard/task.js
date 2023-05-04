@@ -151,14 +151,14 @@ const TaskDetails = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3"> Total Task</p>
+                                   <p class="text-uppercase fw-normal mb-3"> Total Task</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ countAll } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Total task this month</p>
+                                   <p class="mb-0">Total task this month</p>
                                </div>
                            </div>
                        </div>
@@ -171,7 +171,7 @@ const TaskDetails = () => {
 
                <div className="cards" >
                    <div class="card card-animate"  style={{borderRadius:"15px"}}>
-                    <div className="Cardbox"> 
+                    <div className="Cardbox1"> 
                        <div class="card-body">
                            <div class="d-flex align-items-center">
                                <div class="avatar-sm flex-shrink-0">
@@ -180,14 +180,14 @@ const TaskDetails = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3"> Task Completed</p>
+                                   <p class="text-uppercase fw-medium mb-3"> Task Completed</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ taskCount } duration={ 2.75 } separator=","/>
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Task Completed this month</p>
+                                   <p class="mb-0">Task Completed this month</p>
                                </div>
                            </div>
                        </div>
@@ -201,7 +201,7 @@ const TaskDetails = () => {
 
                <div className="cards" >
                    <div class="card card-animate"  style={{borderRadius:"15px"}}>
-                    <div className=" Cardbox">
+                    <div className=" Cardbox2">
                        <div class="card-body">
                            <div class="d-flex align-items-center">
                                <div class="avatar-sm flex-shrink-0">
@@ -210,14 +210,14 @@ const TaskDetails = () => {
                                    </span>
                                </div>
                                <div class="flex-grow-1 ms-3">
-                                   <p class="text-uppercase fw-medium text-muted mb-3"> Task Overdue</p>
+                                   <p class="text-uppercase fw-medium mb-3"> Task Overdue</p>
                                    <div class="d-flex align-items-center mb-3">
-                                       <h4 class="fs-4 flex-grow-1 mb-0">
+                                       <h4 class="fs-2 flex-grow-1 mb-0">
                                        <i class="ri-arrow-down-s-line fs-13 align-middle me-1"></i>
                                        <CountUp start={ 0 } end={ overdueCount } duration={ 2.75 } separator="," />
                                        </h4>                               
                                    </div>
-                                   <p class="text-muted mb-0">Task Overdue this month</p>
+                                   <p class="mb-0">Task Overdue this month</p>
                                </div>
                            </div>
                        </div>
@@ -230,12 +230,12 @@ const TaskDetails = () => {
                <div className="cards">
                <div class="col-xl-12"  className="Tasktable">
                             <div class="card" >
-                                <div class="card-header align-items-center d-flex"  style={{backgroundColor:"linear-gradient(130deg,#293e92, pink,  #293e92)"}}>
+                                <div class="card-header align-items-center d-flex">
                                     <h4 class="card-title mb-0 flex-grow-1 py-1 ">My Tasks</h4>
                                     <div class="flex-shrink-0">
                                         <div class="dropdown card-header-dropdown">
                                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span class="text-muted">All Tasks <i class="mdi mdi-chevron-down ms-1"></i></span>
+                                                <span>All Tasks <i class="mdi mdi-chevron-down ms-1"></i></span>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item" href="#">All Tasks</a>
@@ -256,8 +256,8 @@ const TaskDetails = () => {
                                        <th scope="col">Name</th>
                                       
                                        <th scope="col" >DeadLine</th>
-                                       <th scope="col">Status</th>
                                        <th scope="col">Assignee</th>
+                                       <th scope="col">Status</th>
                                    </tr>
       </thead> 
                                                            
@@ -267,20 +267,20 @@ const TaskDetails = () => {
             <td><input type="checkbox" value="" id="checkTask1"/></td>
                 <td>{task.taskName}</td>
                 <td>{task.dueDate}</td>
-                <td>{task.state}</td>
                 <td>{task.allocatedTo ? task.allocatedTo.name : 'N/A'}</td>
+                <td>{task.state}</td>
             </tr>
         ))}
       </tbody>                                
       </table> 
       <ReactPaginate
        previousLabel={
-        <IconContext.Provider value={{ color: "#B8C1CC", size: "36px" }}>
+        <IconContext.Provider value={{ color: "#8e48d4", size: "36px" }}>
           <AiFillLeftCircle />
         </IconContext.Provider>
       }
       nextLabel={
-        <IconContext.Provider value={{ color: "#B8C1CC", size: "36px" }}>
+        <IconContext.Provider value={{ color: "#8e48d4", size: "36px" }}>
           <AiFillRightCircle />
         </IconContext.Provider>
       }

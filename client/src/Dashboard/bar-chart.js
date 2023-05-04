@@ -33,16 +33,16 @@ const activeData = new Array(12).fill(0);
           {
             label: "Active Projects",
             data: activeData,
-            backgroundColor: "rgb(64, 81, 137)",
-            borderColor: "rgb(64, 81, 137)",
+            backgroundColor: "#764ba2",
+            borderColor: "#fbb2c1",
             borderWidth: 0.5,
             
           },
           {
             label: "Completed Projects",
             data: completedData,
-            backgroundColor: "#0ab39c",
-            borderColor: "#0ab39c",
+            backgroundColor: "#ffa751",
+            borderColor: "#fbb2c1",
             borderWidth: 0.5,
           },
         ],

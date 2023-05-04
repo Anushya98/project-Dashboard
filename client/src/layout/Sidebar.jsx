@@ -50,18 +50,20 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
       <Box
         sx={{
           "& .pro-sidebar-inner": {
-            background: "linear-gradient(130deg,#293e92, pink,  #293e92);"
+            background: "white"
             // borderRadius: "7px !important",
           },
           "& .pro-icon-wrapper": {
             backgroundColor: "transparent !important",
           },
           "& .pro-inner-item": {
-            padding: "5px 20px 5px 20px",
-            color: "#fff",
+            padding: "5px 20px 10px 20px",
+            color: "black",
             fontSize: "10px",
             borderTopLeftRadius:"40px",
             borderBottomLeftRadius:"40px",
+            borderTopRightRadius:"40px",
+            borderBottomRightRadius:"40px",
           },
           "& .pro-inner-item-content": {
             fontSize: "10px",
@@ -77,6 +79,7 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
         <ProSidebar collapsed={isCollapsed}>
           <Menu iconShape="square">
             {/* LOGO AND MENU ICON */}
+        <div className="toggle">
             <MenuItem
               onClick={() => setIsCollapsed(!isCollapsed)}
               icon= { <MenuOutlinedIcon /> }
@@ -88,8 +91,9 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
                 width:"fitContent"
               }}
             ></MenuItem>
+            </div>
 
-            <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+            <Box >
               <Item
                 title="Dashboard"
                 to="/"

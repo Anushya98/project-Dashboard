@@ -9,7 +9,7 @@
     cursor: pointer;
   }
   .page-active {
-    background-color: #6c757d;
+    background: linear-gradient(130deg,#667eea, #bf80ff, #764ba2);
     border-radius: 50%;
   }
   .page-item {
@@ -34,3 +34,6 @@
   .form-check-input {
     vertical-align: middle !important;
   }
+tr{
+  border: #f764a1;
+}

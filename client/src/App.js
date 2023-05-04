@@ -41,7 +41,7 @@ function App() {
         </div>
         <div style={{width: "100%"}}>
           <main className={`main ${isSidebarCollapsed ? "sidebar-collapsed" : ""}`}>
-            <div className="topbar">
+            <div className={`topbar ${isSidebarCollapsed ? "sidebar-collapsed" : ""}`}>
               <div class="layout-width">
                 <Topbar />
               </div>
